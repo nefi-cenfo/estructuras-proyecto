@@ -5,35 +5,41 @@
 #include "nodoDLCategoria.h"
 
 nodoDLCategoria::nodoDLCategoria() {
+    this->nombreCategoria = "";
+    this->sgte = NULL;
+    this->ante = NULL;
 
 }
 
-nodoDLCategoria::nodoDLCategoria(string) {
+nodoDLCategoria::nodoDLCategoria(string pNombre) {
+    this->nombreCategoria = pNombre;
+    this->sgte = NULL;
+    this->ante = NULL;
 
 }
 
-string &nodoDLCategoria::getNombreCategoria() {
-    return nombreCategoria;
+string nodoDLCategoria::getNombreCategoria() {
+    return this->nombreCategoria;
 }
 
-nodoDLCategoria *nodoDLCategoria::getSgte() {
-    return sgte;
+nodoDLCategoria* nodoDLCategoria::getSgte() {
+    return this->sgte;
 }
 
-nodoDLCategoria *nodoDLCategoria::getAnte() {
-    return ante;
+nodoDLCategoria* nodoDLCategoria::getAnte() {
+    return this->ante;
 }
 
-void nodoDLCategoria::setNombreCategoria(string &nombreCategoria) {
-    nodoDLCategoria::nombreCategoria = nombreCategoria;
+void nodoDLCategoria::setNombreCategoria(string nombreCategoria) {
+    this->nombreCategoria = nombreCategoria;
 }
 
-void nodoDLCategoria::setSgte(nodoDLCategoria *sgte) {
-    nodoDLCategoria::sgte = sgte;
+void nodoDLCategoria::setSgte(nodoDLCategoria* ptr) {
+    this->sgte = ptr;
 }
 
-void nodoDLCategoria::setAnte(nodoDLCategoria *ante) {
-    nodoDLCategoria::ante = ante;
+void nodoDLCategoria::setAnte(nodoDLCategoria* ptr) {
+    this->ante = ptr;
 }
 
 

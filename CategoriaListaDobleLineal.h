@@ -24,13 +24,16 @@ public:
     void setCabeza(nodoDLCategoria *cabeza);
     void setLargo(int largo);
 
-    nodoDLCategoria* dirNodo(int);
-    nodoDLCategoria* dirAnterior(int);
+    nodoDLCategoria* dirNodo(string);
+    nodoDLCategoria* dirAnterior(string);
     nodoDLCategoria* dirUltimo();
+
+    void agregarInicio(string);
+    void agregarFinal(string);
 
     bool esVacia();
     bool agregarCategoria(string);
-    string consultarCategoria(string);
+    void consultarCategoria();
     bool retirarCategoria(string);
     bool modificarCategoria(string, string);
     VideoListaDobleCircular* consultarCategoriaVideo();

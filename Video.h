@@ -13,23 +13,24 @@ class Video {
 private:
     int codigoVideo;
     string nombreVideo;
-    string anno;
+    int anno;
     string director;
     int cantidad;
 
 public:
     Video();
+    Video(int, string, string, int, int);
 
     int getCodigoVideo();
-    string &getNombreVideo();
-    string &getAnno();
-    string &getDirector();
+    string getNombreVideo();
+    int getAnno();
+    string getDirector();
     int getCantidad();
 
     void setCodigoVideo(int codigoVideo);
-    void setNombreVideo(string &nombreVideo);
-    void setAnno(string &anno);
-    void setDirector(string &director);
+    void setNombreVideo(string nombreVideo);
+    void setAnno(int anno);
+    void setDirector(string director);
     void setCantidad(int cantidad);
 
 };

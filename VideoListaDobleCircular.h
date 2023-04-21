@@ -30,16 +30,23 @@ public:
 
     bool esVacia();
     bool verificarUnico(Video*);
+    void agregarInicio(Video*);
+    void agregarFinal(Video*);
     bool agregarAscendenteVideo(Video*);
-    string modificarVideo(Video*);
-    string mostrarListaOrdCod();
-    string mostrarListaOrdXNombre();
-    string mostrarListaHilera(string);
-    string mostrarListaAnno(string);
-    string mostrarListaItem(int);
+    void modificarVideo(int, string, int, int);
+    void mostrarListaOrdCod();
+    void mostrarListaOrdCodDes();
+    void mostrarListaOrdCodDes(nodoDCVideo*);
+    void mostrarListaOrdXNombre();
+    void mostrarListaHilera(string);
+    void mostrarListaAnno(int, int);
+    void mostrarListaItem(int);
     string mostrarListaSinCategoria();
-    bool eliminarVideo(Video*);
-    bool eliminarVideoItem(int, Video*);
+    bool eliminarVideo(int);
+    void eliminarVideoItem(int);
+    int consultar(string);
+    int consultarCantidad(string);
+    int consultarNombreAnno(string, int);
 
 };
 

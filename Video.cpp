@@ -5,7 +5,19 @@
 #include "Video.h"
 
 Video::Video() {
+    this->codigoVideo = 0;
+    this->nombreVideo = "";
+    this->director = "";
+    this->anno = 0;
+    this->cantidad = 0;
+}
 
+Video::Video(int pCodigoVideo, string pNombreVideo, string pDirector, int pAnno, int pCantidad) {
+    this->codigoVideo = pCodigoVideo;
+    this->nombreVideo = pNombreVideo;
+    this->director = pDirector;
+    this->anno = pAnno;
+    this->cantidad = pCantidad;
 }
 
 int Video::getCodigoVideo() {
@@ -16,27 +28,27 @@ void Video::setCodigoVideo(int codigoVideo) {
     Video::codigoVideo = codigoVideo;
 }
 
-string &Video::getNombreVideo() {
+string Video::getNombreVideo() {
     return nombreVideo;
 }
 
-void Video::setNombreVideo(string &nombreVideo) {
+void Video::setNombreVideo(string nombreVideo) {
     Video::nombreVideo = nombreVideo;
 }
 
-string &Video::getAnno() {
+int Video::getAnno() {
     return anno;
 }
 
-void Video::setAnno(string &anno) {
+void Video::setAnno(int anno) {
     Video::anno = anno;
 }
 
-string &Video::getDirector() {
+string Video::getDirector() {
     return director;
 }
 
-void Video::setDirector(string &director) {
+void Video::setDirector(string director) {
     Video::director = director;
 }
 

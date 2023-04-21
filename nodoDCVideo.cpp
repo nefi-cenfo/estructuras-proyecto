@@ -8,8 +8,8 @@ nodoDCVideo::nodoDCVideo() {
 
 }
 
-nodoDCVideo::nodoDCVideo(Video *) {
-
+nodoDCVideo::nodoDCVideo(Video *video) {
+    this->video = video;
 }
 
 void nodoDCVideo::setAntVideo(nodoDCVideo *antVideo) {
